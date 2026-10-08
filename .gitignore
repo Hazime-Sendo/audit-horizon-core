@@ -1,0 +1,12 @@
+   __pycache__/
+   *.pyc
+   *.aux
+   *.log
+   *.out
+   *.toc
+   *.synctex.gz
+   .DS_Store
+   build/
+   dist/
+   *.egg-info/
+   .pytest_cache/
