@@ -4,7 +4,7 @@
 *Self-audit horizons of finitely axiomatized theories: non-accumulation of finite reflection and the cost of external verification*
 by Hazime Sendo (independent researcher, Japan).
 
-<!-- DOI badge: added after the first Zenodo release. -->
+ [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23238485.svg)](https://doi.org/10.5281/zenodo.23238485)
 [![verify](https://github.com/Hazime-Sendo/audit-horizon-core/actions/workflows/verify.yml/badge.svg)](https://github.com/Hazime-Sendo/audit-horizon-core/actions/workflows/verify.yml)
 
 This repository reproduces every numerical claim of the paper from first principles and compares each value with the value printed in the paper. The paper itself is not part of this repository.
