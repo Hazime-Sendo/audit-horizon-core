@@ -1,0 +1,40 @@
+   name: verify
+
+   on:
+     push:
+     pull_request:
+     workflow_dispatch:
+       inputs:
+         full:
+           description: "Run the full reproduction (about 1 minute) instead of the smoke test"
+           type: boolean
+           default: false
+
+   jobs:
+     verify:
+       # Python 3.8 is not available for ubuntu-24.04 (= ubuntu-latest) in
+       # actions/setup-python, so the oldest supported version runs on 22.04.
+       runs-on: ${{ matrix.os }}
+       strategy:
+         fail-fast: false
+         matrix:
+           include:
+             - os: ubuntu-22.04
+               python-version: "3.8"
+             - os: ubuntu-latest
+               python-version: "3.12"
+       steps:
+         - uses: actions/checkout@v4
+         - uses: actions/setup-python@v5
+           with:
+             python-version: ${{ matrix.python-version }}
+         - name: Unit tests
+           run: |
+             python -m pip install -r requirements-dev.txt
+             PYTHONPATH=src python -m pytest -q
+         - name: Smoke test
+           if: ${{ !inputs.full }}
+           run: python scripts/reproduce_all.py --quick
+         - name: Full reproduction
+           if: ${{ inputs.full }}
+           run: python scripts/reproduce_all.py
