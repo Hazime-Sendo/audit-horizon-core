@@ -1,0 +1,24 @@
+   {
+     "title": "audit-horizon-core: verification code for \"Self-audit horizons of finitely axiomatized theories\"",
+     "upload_type": "software",
+     "description": "<p>Verification code for the paper <i>Self-audit horizons of finitely axiomatized theories: non-accumulation of finite reflection and the cost of external verification</i> (H. Sendo).</p><p>The code reproduces every numerical result of the paper: exact counts of formulas and the singularity analysis for first-order languages L(c,k,m) (trichotomy, bases b = 1+&radic;2, 3, 1+2&radic;2, exponents &gamma; = 3/2 and 5/4, asymptotic constants in closed form), a linear-time saturation audit for fragments of Robinson's Q with the operation bounds of Lemma 5.1, and an exhaustive check that {Q1, Q2} has no small finite model. <code>python3 scripts/reproduce_all.py</code> compares each value with the value printed in the paper. Python 3.8 or later, no third-party packages.</p>",
+     "creators": [
+       {
+         "name": "Sendo, Hazime",
+         "affiliation": "Independent researcher, Japan"
+       }
+     ],
+     "keywords": [
+       "finite consistency statements",
+       "lengths of proofs",
+       "singularity analysis",
+       "analytic combinatorics",
+       "saturation audit",
+       "Robinson arithmetic",
+       "proof complexity"
+     ],
+     "license": "Apache-2.0",
+     "version": "1.0.0",
+     "language": "eng",
+     "notes": "Reproduces the numerical results of the accompanying paper (MSC 2020: 03F20, 03F30, 03F40, 05A16). The paper is not included in this record."
+   }
