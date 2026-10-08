@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audit-horizon"
+version = "1.0.0"
+description = "Verification code for 'Self-audit horizons of finitely axiomatized theories: non-accumulation of finite reflection and the cost of external verification'"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [{name = "Hazime Sendo"}]
+keywords = ["finite consistency", "lengths of proofs", "analytic combinatorics", "singularity analysis", "Robinson arithmetic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+audit-horizon = "audit_horizon.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Hazime-Sendo/audit-horizon-core"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src/audit_horizon"]
+addopts = "--doctest-modules -p no:cacheprovider"

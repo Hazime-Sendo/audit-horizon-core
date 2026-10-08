@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, together with the paper."
+title: "audit-horizon-core: verification code for 'Self-audit horizons of finitely axiomatized theories'"
+type: software
+authors:
+  - family-names: Sendo
+    given-names: Hazime
+    affiliation: Independent researcher, Japan
+version: 1.0.0
+date-released: 2026-10-08
+license: Apache-2.0
+repository-code: "https://github.com/Hazime-Sendo/audit-horizon-core"
+keywords:
+  - finite consistency statements
+  - lengths of proofs
+  - singularity analysis
+  - saturation audit
+  - Robinson arithmetic
+abstract: >-
+  Python code that reproduces every numerical result of the paper "Self-audit
+  horizons of finitely axiomatized theories: non-accumulation of finite
+  reflection and the cost of external verification": exact formula counts and
+  singularity analysis for first-order languages with terms, a linear-time
+  saturation audit for fragments of Robinson's Q, and the comparison of all
+  values with those printed in the paper.
+references:
+  - type: unpublished
+    title: "Self-audit horizons of finitely axiomatized theories: non-accumulation of finite reflection and the cost of external verification"
+    authors:
+      - family-names: Sendo
+        given-names: Hazime
+    year: 2026
+    notes: "Manuscript"

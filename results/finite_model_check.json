@@ -1,0 +1,37 @@
+[
+ {
+  "domain_size": 1,
+  "maps": 1,
+  "models": 0
+ },
+ {
+  "domain_size": 2,
+  "maps": 4,
+  "models": 0
+ },
+ {
+  "domain_size": 3,
+  "maps": 27,
+  "models": 0
+ },
+ {
+  "domain_size": 4,
+  "maps": 256,
+  "models": 0
+ },
+ {
+  "domain_size": 5,
+  "maps": 3125,
+  "models": 0
+ },
+ {
+  "domain_size": 6,
+  "maps": 46656,
+  "models": 0
+ },
+ {
+  "domain_size": 7,
+  "maps": 823543,
+  "models": 0
+ }
+]

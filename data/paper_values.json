@@ -1,0 +1,95 @@
+{
+ "_source": "Values printed in the paper 'Self-audit horizons of finitely axiomatized theories' (H. Sendo), version 1.0. Used by scripts/reproduce_all.py as reference values.",
+ "c_F": {
+  "_where": "Example 5.5 and Table 2",
+  "L1": 0.521243,
+  "L2": 0.37971,
+  "LQ": 0.189484
+ },
+ "b": {
+  "_where": "Proposition 5.2, Example 5.5",
+  "L1": "1+sqrt(2)",
+  "L2": "3",
+  "LQ": "1+2*sqrt(2)"
+ },
+ "table2": {
+  "_where": "Table 2: f(n) rho^n n^gamma",
+  "rows": [
+   {
+    "language": "L1",
+    "n": 400,
+    "value": 0.521602
+   },
+   {
+    "language": "L1",
+    "n": 3000,
+    "value": 0.52129
+   },
+   {
+    "language": "L2",
+    "n": 400,
+    "value": 0.370237
+   },
+   {
+    "language": "L2",
+    "n": 3000,
+    "value": 0.376513
+   },
+   {
+    "language": "LQ",
+    "n": 400,
+    "value": 0.18864
+   },
+   {
+    "language": "LQ",
+    "n": 2500,
+    "value": 0.189349
+   }
+  ]
+ },
+ "table3": {
+  "_where": "Table 3: linear-time saturation audits",
+  "rows": [
+   {
+    "language": "L1",
+    "n": 22,
+    "U": 2457228,
+    "Th": 15504,
+    "C_over_U": 2.013,
+    "excess_over_Th": 2.03
+   },
+   {
+    "language": "L2",
+    "n": 18,
+    "U": 5148468,
+    "Th": 71382,
+    "C_over_U": 2.015,
+    "excess_over_Th": 1.06
+   },
+   {
+    "language": "LQ",
+    "n": 14,
+    "U": 651252,
+    "Th": 18883,
+    "C_over_U": 2.029,
+    "excess_over_Th": 1.01
+   }
+  ]
+ },
+ "remark_5_6": {
+  "_where": "Remark 5.6",
+  "Th_18_L2": 71382,
+  "Q2_instances_in_Th_18_L2": 66706
+ },
+ "refutation": {
+  "_where": "Section 6.2",
+  "width": 11,
+  "length": 26,
+  "lines": 4
+ },
+ "finite_models": {
+  "_where": "Section 6.2",
+  "max_domain_size_checked": 7,
+  "models_found": 0
+ }
+}

@@ -1,0 +1,50 @@
+== Trichotomy (Proposition 5.2) ==
+L1: (c,k,m)=(1,1,0)  Phi=---  case (i)  rho=0.414214  b=2.414214  gamma=1.5  c_F=0.521243
+L2: (c,k,m)=(1,1,1)  Phi=+0.000000  case (ii)  rho=0.333333  b=3.000000  gamma=1.25  c_F=0.379710
+LQ: (c,k,m)=(1,1,2)  Phi=+1.414214  case (iii)  rho=0.261204  b=3.828427  gamma=1.5  c_F=0.189484
+propositional logic, a atoms: b = 1 + 2 sqrt(a); a=2 -> 3.828427
+
+== L1, case (i) ==
+rho = sqrt(2)-1 = 0.414213562 (computed 0.414213562)
+Delta'(rho) = -5.656854  (-4 sqrt 2 = -5.656854)
+c_F = sqrt(8+4 sqrt2)/(4 sqrt pi) = 0.521243
+Meir-Moon: tau=0.707107  G_z=3.414214 (2+sqrt2=3.414214)  c_F=0.521243
+
+== L2, case (ii) ==
+T0=1.000000  t1=1.732051 (sqrt3)  a1=1.154701 (2 sqrt3/3)
+c_F = 12^(1/4)/|Gamma(-1/4)| = 0.379710  (computed 0.379710)
+second-order coefficient d = -0.166716
+
+== LQ, case (iii) ==
+T0=0.707107 A0=0.130602 a1=0.429766 Delta(rho)=0.409365 c_F=0.189484
+
+== Table 2: normalized counts f(n) rho^n n^gamma ==
+L1 n=  100  value=0.522847  prediction=0.521243  rel.error*n=+0.308
+L1 n=  400  value=0.521602  prediction=0.521243  rel.error*n=+0.276
+L1 n= 1000  value=0.521384  prediction=0.521243  rel.error*n=+0.269
+L1 n= 2000  value=0.521313  prediction=0.521243  rel.error*n=+0.267
+L1 n= 3000  value=0.521290  prediction=0.521243  rel.error*n=+0.267
+L2 n=  100  value=0.358569  prediction(with n^-1/2)=0.363038  residual*n=-0.447
+L2 n=  400  value=0.370237  prediction(with n^-1/2)=0.371374  residual*n=-0.455
+L2 n= 1000  value=0.373981  prediction(with n^-1/2)=0.374438  residual*n=-0.457
+L2 n= 2000  value=0.375753  prediction(with n^-1/2)=0.375982  residual*n=-0.458
+L2 n= 3000  value=0.376513  prediction(with n^-1/2)=0.376666  residual*n=-0.458
+LQ n=  100  value=0.186130  prediction=0.189484  rel.error*n=-1.770
+LQ n=  400  value=0.188640  prediction=0.189484  rel.error*n=-1.781
+LQ n= 1000  value=0.189146  prediction=0.189484  rel.error*n=-1.783
+LQ n= 2500  value=0.189349  prediction=0.189484  rel.error*n=-1.784
+L2 with the naive exponent gamma=3/2 (diverges): n=50: 0.92, n=100: 1.13, n=200: 1.38, n=400: 1.66, n=800: 1.99, n=1200: 2.20
+
+== A1 lower bound constant and crossover in L2 (Remark 5.6) ==
+L1: #A1 instances of length 100 / f(100) = 0.00177
+L1: #A1 instances of length 300 / f(300) = 0.00160
+L1: #A1 instances of length 600 / f(600) = 0.00156
+L1: predicted limit rho^2 F(rho^2) = 0.001527
+L2: A1 instances per length ~ 8.510e-05 * 3^n n^(-5/4); cumulative 1.277e-04
+L2: ground instances of Q2 (cumulative) ~ 9.048e-03 * 3^n n^(-3/2)
+L2: leading-order crossover at n ~ 2.52e+07
+
+== Horizon extension per factor 10 of budget: log(10)/log(b) ==
+L1: 2.61 symbols
+L2: 2.10 symbols
+LQ: 1.72 symbols
